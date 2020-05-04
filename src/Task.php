@@ -74,7 +74,7 @@ abstract class Task extends Component {
     }
 
     public function getName() : string {
-        return stripslashes(get_called_class());
+        return get_called_class();
     }
 
     public function run() : bool {

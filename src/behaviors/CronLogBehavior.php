@@ -40,7 +40,7 @@ class CronLogBehavior extends Behavior {
     }
 
     private function getFilePath() : string {
-        return Yii::getAlias($this->filePath . DIRECTORY_SEPARATOR . $this->owner->getName() . '.log');
+        return Yii::getAlias($this->filePath . DIRECTORY_SEPARATOR . stripslashes($this->owner->getName()) . '.log');
     }
 
     public function setStatus(string $status) : void {
