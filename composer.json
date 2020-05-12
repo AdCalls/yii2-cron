@@ -1,0 +1,28 @@
+{
+  "name": "adcalls/yii2-cron",
+  "description": "Yii2 cron extension",
+  "type": "yii2-extension",
+  "keywords": ["yii", "cron"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Paul Van Oosten",
+      "email": "paul@adcalls.nl"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "yiisoft/yii2": "2.0.23",
+    "nesbot/carbon": "^2.33"
+  },
+  "autoload": {
+    "psr-4": {
+      "yii\\cron\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\": "tests/"
+    }
+  }
+}
